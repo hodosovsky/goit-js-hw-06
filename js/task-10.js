@@ -10,8 +10,9 @@ const box = [];
 buttonCreate.addEventListener("click", makeBox);
 function makeBox() {
   const input = document.querySelector("#controls input");
+  let finishCount = box.length + +input.value;
 
-  for (let i = 0; i < input.value; i += 1) {
+  for (let i = box.length; i < finishCount; i += 1) {
     const boxEl = document.createElement("div");
     boxEl.style.width = `${30 + 10 * i}px`;
     boxEl.style.height = `${30 + 10 * i}px`;

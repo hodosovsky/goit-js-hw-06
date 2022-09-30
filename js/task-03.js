@@ -26,21 +26,21 @@ const makePhoto = (image) => {
 const makeGallery = images.map(makePhoto).join(" ");
 parrent.insertAdjacentHTML("beforeend", makeGallery);
 
-const style = document.querySelector("head");
-const styleEl = `<style>
-      .gallery {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        list-style: none;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      .gallery img {
-        display: block;
-      }
-    </style>`;
-style.insertAdjacentHTML("beforeend", styleEl);
+// const style = document.querySelector("head");
+// const styleEl = `<style>
+//       .gallery {
+//         display: flex;
+//         justify-content: center;
+//         gap: 30px;
+//         list-style: none;
+//         margin-top: 0;
+//         margin-bottom: 0;
+//       }
+//       .gallery img {
+//         display: block;
+//       }
+//     </style>`;
+// style.insertAdjacentHTML("beforeend", styleEl);
 
 // 2-ий спосіб
 // parrent.style.display = "flex";
