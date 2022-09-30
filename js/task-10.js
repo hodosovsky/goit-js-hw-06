@@ -11,10 +11,10 @@ buttonCreate.addEventListener("click", makeBox);
 function makeBox() {
   const input = document.querySelector("#controls input");
 
-  for (let i = 1; i <= input.value; i += 1) {
+  for (let i = 0; i < input.value; i += 1) {
     const boxEl = document.createElement("div");
-    boxEl.style.width = `${30 * i}px`;
-    boxEl.style.height = `${30 * i}px`;
+    boxEl.style.width = `${30 + 10 * i}px`;
+    boxEl.style.height = `${30 + 10 * i}px`;
     boxEl.style.backgroundColor = getRandomHexColor();
 
     box.push(boxEl);
